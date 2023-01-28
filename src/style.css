@@ -1,13 +1,16 @@
 body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/892/original/pexels-lumn-167699.jpg?1674947376");
+  background-size: 100%;
+  background-repeat: no-repeat;
   font-family: arial, sans-serif;
 }
 
 h1 {
-  color: #878787;
-  font-size: 24px;
+  color: #2b2929;
+  font-size: 30px;
   font-weight: 100;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 7px;
 }
 
 ul {
@@ -33,14 +36,17 @@ a {
 }
 
 .weather-wrapper {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
 }
 
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px rgb(75, 121, 139);
+  background-color: white;
+  opacity: 0.8;
 }
 
 .overview {
@@ -49,8 +55,8 @@ a {
 
 .weather-temperature img {
   margin-right: 5px;
-  height: 64px;
-  width: 64px;
+  height: 70px;
+  width: 70px;
 }
 
 .weather-temperature strong {
@@ -60,20 +66,14 @@ a {
   line-height: 1;
 }
 
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-  font-weight: bold;
-}
-
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
   color: #000;
 }
 .weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
+  font-size: 18px;
+  opacity: 0.8;
 }
 
 .weather-forcaast-temperature-min {
@@ -81,5 +81,5 @@ a {
 }
 
 .weather-forcast-temperatures {
-  font-size: 13px;
+  font-size: 18px;
 }

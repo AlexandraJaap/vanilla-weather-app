@@ -47,7 +47,7 @@ function displayForecast(response) {
                     forecastDay.condition.icon
                   }.png"
                   alt=""
-                  width="42"
+                  width="50"
                 />
                 <div class="weather-forcast-temperatures">
                   <span class="weather-forecast-temperature-max"> ${Math.round(
@@ -67,7 +67,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "bc32133795a14tcoff79dbf7807a98a7";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
